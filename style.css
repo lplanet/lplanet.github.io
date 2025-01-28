@@ -1,0 +1,40 @@
+/* Corps de la page */
+body {
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Conteneur des villes : Flexbox */
+.villes-container {
+    display: flex;
+    justify-content: space-around;  /* Espacement égal entre les villes */
+    flex-wrap: wrap;  /* Permet de passer à une nouvelle ligne quand il n'y a pas assez d'espace */
+    margin: 20px;
+}
+
+/* Villes individuelles */
+.ville {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;  /* Chaque ville occupe 30% de l'espace, et peut se réduire ou s'agrandir */
+    max-width: 300px; /* Limite la taille maximale d'une ville */
+    text-align: center;
+}
+
+/* Image de la ville */
+.ville img {
+    display: block;
+    margin-top: 10px
